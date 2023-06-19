@@ -1,6 +1,42 @@
 ## cypheredd/pnfts-mint
 This is a modified version of [this repo](https://github.com/cypheredd/pnfts-mint)
 
+# Setup your own cmui
+
+You'll need to modify a few things to make this work for your own NFT collection on mainnet. <b>Be careful tho, there's no edit undo</b>. Head over to [Quicknode](https://www.quicknode.com/) and get setup with a free account. I didn't use pNFTs, so I'm not following the walkthrough in the [Original Readme](https://github.com/ilovespectra/bombsquad/edit/main/README.md#original-readme) below.
+
+Start by creating an endpoint<br><br>
+![rpc-start](https://media.discordapp.net/attachments/1051281685234327613/1120493098221457509/rpc-start.png?width=884&height=330)
+<br><br>
+Select Solana<br><br>
+![rpc-solana](https://media.discordapp.net/attachments/1051281685234327613/1120493098590552145/rpc-solana.png?width=600&height=330)
+<br><br>
+Create your endpoint<br><br>
+![rpc-create](https://media.discordapp.net/attachments/1051281685234327613/1120493099160981604/rpc-create.png?width=540&height=330)
+<br><br>
+Select mainnet-beta <b>Proceed with caution</b><br><br>
+![rpc-mainnet](https://media.discordapp.net/attachments/1051281685234327613/1120493098909306950/rpc-mainnet.png)
+<br><br>
+Select your RPC<br><br>
+![rpc-yours](https://media.discordapp.net/attachments/1051281685234327613/1120495297659936768/rpc-yours.png)
+<br><br>
+Copy the address<br><br>
+![rpc-copy](https://media.discordapp.net/attachments/1051281685234327613/1120495297353756682/rpc-copy.png?width=768&height=330)
+<br><br>
+Paste it here, where it says RPC<br><br>
+![rpc-paste](https://media.discordapp.net/attachments/1051281685234327613/1120496971443097690/image.png?width=932&height=259)
+<br><br>
+(Modify the rest of those contents in your `.env` as well.)
+<br><br>
+Navigate to `/components/WalletProvider.tsx` and paste your RPC endpoint url in line 17.<br><br>
+![rpc-paste2](https://media.discordapp.net/attachments/1051281685234327613/1120498024444071966/rpc-paste2.png?width=932&height=248)
+
+# Ship it on Vercel
+
+Head over to [Vercel.com](https://vercel.com) and link your Github.<br<br>
+Add New Project<br><br>
+Select this repo<br><br>
+
 # Original Readme
 
 To setup a Candy Machine:
