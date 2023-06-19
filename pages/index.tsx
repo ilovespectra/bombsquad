@@ -30,6 +30,10 @@ export default function Home() {
   >(null)
   const [formMessage, setFormMessage] = useState<string | null>(null)
 
+  // add or remove background image
+  // const backgroundImage = ""
+  const backgroundImage = "https://media.discordapp.net/attachments/1051281685234327613/1120352140351766718/imageedit_1_8690724564.png";
+
   useEffect(() => {
     ;(async () => {
       if (wallet && connection && !collection && !candyMachine) {
@@ -127,94 +131,113 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>pNFTs mint</title>
-        <meta name="description" content="Mint pNFTs from the UI" />
+        <title>BombSquad NFT Mint</title>
+        <meta name="description" content="Mint BombSquad NFTs from the UI" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main
+      <div
         style={{
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          padding: "96px 0",
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
-      >
-        <div
+        >
+        <main
           style={{
             display: "flex",
-            gap: "32px",
-            alignItems: "flex-start",
+            flexDirection: "column",
+            alignItems: "center",
+            padding: "96px 0",
           }}
         >
-          <img
-            style={{ maxWidth: "396px", borderRadius: "8px" }}
-            src={collection?.json?.image}
-          />
           <div
             style={{
               display: "flex",
-              flexDirection: "column",
-              background: "#111",
-              padding: "32px 24px",
-              borderRadius: "16px",
-              border: "1px solid #222",
-              minWidth: "320px",
+              gap: "32px",
+              alignItems: "flex-start",
             }}
           >
-            <h1>{collection?.name}</h1>
-            <p style={{ color: "#807a82", marginBottom: "32px" }}>
-              {collection?.json?.description}
-            </p>
-
+            <img
+              style={{ maxWidth: "396px", borderRadius: "8px" }}
+              src={collection?.json?.image}
+            />
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
-                background: "#261727",
-                padding: "16px 12px",
+                background: "#111",
+                padding: "32px 24px",
                 borderRadius: "16px",
+                border: "1px solid #222",
+                minWidth: "320px",
               }}
             >
+              <h1>{collection?.name}</h1>
+              <p style={{ color: "#807a82", marginBottom: "32px" }}>
+                {collection?.json?.description}
+              </p>
+  
+              {/* add some content here if you want
+                
+              <p><i>For example, additional description.</i></p><br></br>
+                
+              */}
+  
+              <p><i>There are 100 BombSquad NFTs in this CandyMachine, which must be emptied by 7/8.<br></br> 
+              100% refund if we fail to reach our goal, and you get to keep the NFT!</i></p><br></br>
+  
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  background: "#261727",
+                  padding: "16px 12px",
+                  borderRadius: "16px",
                 }}
               >
-                <span>Public</span>
-                <b>{cost}</b>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <span>Public</span>
+                  <b>{cost}</b>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    marginBottom: "16px",
+                  }}
+                >
+                  <span style={{ fontSize: "11px" }}>Live</span>
+                  <span style={{ fontSize: "11px" }}></span>
+                </div>
+                <button disabled={!publicKey} onClick={handleMintV2}>
+                  mint
+                </button>
+                <WalletMultiButton
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    marginTop: "8px",
+                    padding: "8px 0",
+                    justifyContent: "center",
+                    fontSize: "13px",
+                    backgroundColor: "#111",
+                    lineHeight: "1.45",
+                  }}
+                />
+                {formMessage}
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  marginBottom: "16px",
-                }}
-              >
-                <span style={{ fontSize: "11px" }}>Live</span>
-                <span style={{ fontSize: "11px" }}></span>
-              </div>
-              <button disabled={!publicKey} onClick={handleMintV2}>
-                mint
-              </button>
-              <WalletMultiButton
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  marginTop: "8px",
-                  padding: "8px 0",
-                  justifyContent: "center",
-                  fontSize: "13px",
-                  backgroundColor: "#111",
-                  lineHeight: "1.45",
-                }}
-              />
-              {formMessage}
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </>
   )
 }
