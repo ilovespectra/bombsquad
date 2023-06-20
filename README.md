@@ -3,17 +3,19 @@ This is a modified version of [this repo](https://github.com/cypheredd/pnfts-min
 
 # Setup your own cmui
 
-You'll need to modify a few things to make this work for your own NFT collection on mainnet. <b>Be careful tho, there's no edit undo</b>. Head over to [Quicknode](https://www.quicknode.com/) and get setup with a free account. I didn't use pNFTs, so I'm not following the walkthrough in the [Original Readme](https://github.com/ilovespectra/bombsquad/edit/main/README.md#original-readme) below.
+You'll need to modify a few things to make this work for your own NFT collection on mainnet. <b>Be careful tho, there's no edit undo</b>.<br><br>
+Start by changing your `example.env` to `.env`. <b>Proceed with Caution!</b><br><br>
+Head over to [Quicknode](https://www.quicknode.com/) and get setup with a free account. I didn't use pNFTs, so I'm not following the walkthrough in the [Original Readme](https://github.com/ilovespectra/bombsquad/edit/main/README.md#original-readme) below.
 
-Start by creating an endpoint<br><br>
+Create an endpoint<br><br>
 ![rpc-start](https://media.discordapp.net/attachments/1051281685234327613/1120493098221457509/rpc-start.png?width=884&height=330)
 <br><br>
 Select Solana<br><br>
 ![rpc-solana](https://media.discordapp.net/attachments/1051281685234327613/1120493098590552145/rpc-solana.png?width=600&height=330)
 <br><br>
-<br><br>
 Select mainnet-beta <b>Proceed with caution</b><br><br>
 ![rpc-mainnet](https://media.discordapp.net/attachments/1051281685234327613/1120493098909306950/rpc-mainnet.png)
+<br><br>
 Create your endpoint<br><br>
 ![rpc-create](https://media.discordapp.net/attachments/1051281685234327613/1120493099160981604/rpc-create.png?width=540&height=330)
 <br><br>
