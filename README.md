@@ -11,11 +11,11 @@ Start by creating an endpoint<br><br>
 Select Solana<br><br>
 ![rpc-solana](https://media.discordapp.net/attachments/1051281685234327613/1120493098590552145/rpc-solana.png?width=600&height=330)
 <br><br>
-Create your endpoint<br><br>
-![rpc-create](https://media.discordapp.net/attachments/1051281685234327613/1120493099160981604/rpc-create.png?width=540&height=330)
 <br><br>
 Select mainnet-beta <b>Proceed with caution</b><br><br>
 ![rpc-mainnet](https://media.discordapp.net/attachments/1051281685234327613/1120493098909306950/rpc-mainnet.png)
+Create your endpoint<br><br>
+![rpc-create](https://media.discordapp.net/attachments/1051281685234327613/1120493099160981604/rpc-create.png?width=540&height=330)
 <br><br>
 Select your RPC<br><br>
 ![rpc-yours](https://media.discordapp.net/attachments/1051281685234327613/1120495297659936768/rpc-yours.png)
