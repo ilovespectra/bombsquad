@@ -25,7 +25,7 @@ Select your RPC<br><br>
 Copy the address<br><br>
 ![rpc-copy](https://media.discordapp.net/attachments/1051281685234327613/1120495297353756682/rpc-copy.png?width=768&height=330)
 <br><br>
-Paste it here, where it says RPC<br><br>
+Paste it into your `.env` file, where it says RPC<br><br>
 ![rpc-paste](https://media.discordapp.net/attachments/1051281685234327613/1120496971443097690/image.png?width=932&height=259)
 <br><br>
 (Modify the rest of those contents in your `.env` as well.)
