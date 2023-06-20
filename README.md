@@ -30,7 +30,7 @@ Paste it here, where it says RPC<br><br>
 <br><br>
 (Modify the rest of those contents in your `.env` as well.)
 <br><br>
-Navigate to `/components/WalletProvider.tsx` and paste your RPC endpoint url in line 17.<br><br>
+Navigate to `/components/WalletProvider.tsx` and paste your RPC endpoint url in line 18, where the curser lies in the screenshot below.<br><br>
 ![rpc-paste2](https://media.discordapp.net/attachments/1051281685234327613/1120498024444071966/rpc-paste2.png?width=932&height=248)
 
 # Ship it on Vercel
