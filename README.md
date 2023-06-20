@@ -33,7 +33,7 @@ Navigate to `/components/WalletProvider.tsx` and paste your RPC endpoint url in 
 
 # Ship it on Vercel
 
-Head over to [Vercel.com](https://vercel.com) and link your Github.<br<br>
+Head over to [Vercel.com](https://vercel.com) and link your Github.<br><br>
 Add New Project<br><br>
 Select this repo<br><br>
 
