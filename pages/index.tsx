@@ -140,7 +140,6 @@ export default function Home() {
         style={{
           display: "flex",
           backgroundImage: `url(${backgroundImage})`,
-          backgroundRepeat: "repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -161,11 +160,15 @@ export default function Home() {
             }}
           >
             <img
-              style={{ maxWidth: "396px", borderRadius: "8px" }}
+              style={{ 
+                marginLeft: "16px",
+                maxWidth: "396px", 
+                borderRadius: "8px" }}
               src={collection?.json?.image}
             />
             <div
               style={{
+                marginRight: "16px",
                 display: "flex",
                 flexDirection: "column",
                 background: "#111",
