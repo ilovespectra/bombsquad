@@ -5,9 +5,18 @@ import {
 } from "@solana/wallet-adapter-react"
 import {
   BackpackWalletAdapter,
+  BraveWalletAdapter,
+  CoinbaseWalletAdapter,
+  CoinhubWalletAdapter,
+  GlowWalletAdapter,
   LedgerWalletAdapter,
+  MathWalletAdapter,
   PhantomWalletAdapter,
+  SlopeWalletAdapter,
   SolflareWalletAdapter,
+  SolletWalletAdapter,
+  SpotWalletAdapter,
+  TorusWalletAdapter,
 } from "@solana/wallet-adapter-wallets"
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui"
 
@@ -31,6 +40,15 @@ const Wallet = ({ children }: { children: React.ReactChild }) => {
       new BackpackWalletAdapter(),
       new SolflareWalletAdapter(),
       new LedgerWalletAdapter(),
+      new GlowWalletAdapter(),
+      new BraveWalletAdapter(),
+      new MathWalletAdapter(),
+      new SpotWalletAdapter(),
+      new SlopeWalletAdapter(),
+      new TorusWalletAdapter(),
+      new SolletWalletAdapter(),
+      new CoinhubWalletAdapter(),
+      new CoinbaseWalletAdapter(),
     ],
     []
   )
