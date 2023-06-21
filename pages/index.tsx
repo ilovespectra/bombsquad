@@ -136,6 +136,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <style>
+        {`
+          body {
+            margin: 0;
+            padding: 0;
+          }
+        `}
+      </style>
       <div
         style={{
           display: "flex",
